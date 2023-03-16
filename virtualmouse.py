@@ -52,7 +52,7 @@ while True:
     success, img = cap.read()
     img = cv2.flip(img, 1)
     img = detector.findHands(img)
-    lmList, bbox = detector.findPosition(img, draw=False)
+    lmList, _ = detector.findPosition(img, draw=False)
     
     fingers = []
 
